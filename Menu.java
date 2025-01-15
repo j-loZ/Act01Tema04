@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 public class Menu {
+    public static String invertirFrase(String frase) {
+        StringBuilder sb = new StringBuilder(frase);
+        return sb.reverse().toString();
+    }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String frase = "";
-
-        // Solicitar al usuario una frase
         System.out.println("Introduce una frase:");
         frase = sc.nextLine();
-
-        // Menú de opciones
         int opcion = 0;
         do {
             System.out.println("\nMenú:");
@@ -21,10 +21,9 @@ public class Menu {
             System.out.print("Selecciona una opción: ");
             opcion = sc.nextInt();
 
-            // Llamada a métodos según opción seleccionada (comentadas por ahora)
             switch (opcion) {
                 case 1:
-                    // System.out.println(invertirFrase(frase));  // Método de inversión de la frase
+                    System.out.println(invertirFrase(frase));
                     break;
                 case 2:
                     // System.out.println(pasarMayusculas(frase));  // Método para pasar a mayúsculas
