@@ -7,6 +7,9 @@ public class Menu {
     }
     public static void mostrarFrase(String frase) {
         System.out.println("Frase: " + frase);
+    }
+    public static String pasarMayusculas(String frase) {
+        return frase.toUpperCase();
     }    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
