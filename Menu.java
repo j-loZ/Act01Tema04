@@ -5,6 +5,9 @@ public class Menu {
         StringBuilder sb = new StringBuilder(frase);
         return sb.reverse().toString();
     }
+    public static void mostrarFrase(String frase) {
+        System.out.println("Frase: " + frase);
+    }    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String frase = "";
@@ -32,7 +35,7 @@ public class Menu {
                     // System.out.println(pasarMinusculas(frase));  // Método para pasar a minúsculas
                     break;
                 case 4:
-                    // mostrarFrase(frase);  // Método para mostrar la frase
+                    mostrarFrase(frase);
                     break;
                 case 5:
                     System.out.println("¡Adiós!");
