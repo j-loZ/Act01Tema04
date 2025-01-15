@@ -10,7 +10,10 @@ public class Menu {
     }
     public static String pasarMayusculas(String frase) {
         return frase.toUpperCase();
-    }    
+    }
+    public static String pasarMinusculas(String frase) {
+        return frase.toLowerCase();
+    }        
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String frase = "";
